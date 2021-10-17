@@ -1,0 +1,39 @@
+<section [ngStyle]="{backgroundImage:'url(assets/images/subscribe.jpeg)'}" class="home"><div class="container">
+  <div [hidden]="submitted" class="form">
+      <h1> Subscribe to our Newsletter </h1>
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name"
+              required
+              [(ngModel)]="model.name" name="name"
+              #name="ngModel">
+              <div [hidden]="name.valid || name.pristine"
+                  class="alert alert-danger">
+                   Name is required
+              </div>
+          </div>
+          <div class="form-group">                
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName"
+              required
+              [(ngModel)]="model.lastName" name="lastName">
+          </div>
+
+          <div class='form-group'>
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email"
+              required
+              [(ngModel)]="model.email" name="email">
+          </div>
+          <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
+          <button type="button" class="btn btn-default" (click)="newContact(); contactForm.reset()">New Contact</button>
+      </form>
+  </div>
+
+  <div [hidden]="!submitted" class="form">
+      <h2>Thank you for subscribing to our newsletter!</h2>
+      <h3>Stay Posted. Coming Soon.</h3>
+    </div>
+</div>
+</section>

@@ -1,0 +1,16 @@
+.nav-link{
+    font-size: 25px;
+    font-family: 'Poppins' sans-serif;
+    color: white;
+    margin-right: 15px;
+    font-weight: lighter;
+}
+.nav-link1 {
+    font-size:30px;
+    font-family: 'Nasalization';
+    text-decoration: none;
+    color: white;
+}
+.container {
+    min-height: 75px;
+}

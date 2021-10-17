@@ -1,0 +1,16 @@
+.home {
+    width: 100%;
+    background: top center;
+    background-size: cover;
+    height: 1000px;
+}
+.form {
+    background-color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.form-group {
+    padding-bottom: 20px;
+}
