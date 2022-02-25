@@ -18,6 +18,7 @@ export const routerConfig: Routes = [
   },
   {
       path: 'contact',
+      redirectTo: '/home',
       component: ContactFormComponent
   },
   {
