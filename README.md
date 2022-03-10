@@ -4,7 +4,7 @@
 
 ### The Future Is Transporter
 
-Coming soon - 2022
+Soon - 2022
 
 Transporter - the future of mobility
 Ridesharing for everyone
