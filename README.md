@@ -7,4 +7,3 @@
 Soon - 2022
 
 Transporter - the future of mobility
-Ridesharing for everyone
